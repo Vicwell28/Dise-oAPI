@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/ff"
+    tools:context=".Intents.Distancia">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lna1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lna2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lna3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lna4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lna5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lna6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lna7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lna8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lna10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lna11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lna12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lna13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lna14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lna15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BABYCARE DISTANCE"
+        android:textAlignment="center"
+        android:textColor="#016564"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lna10"
+        app:layout_constraintEnd_toStartOf="@+id/lna2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/lna1"
+        app:layout_constraintTop_toTopOf="@+id/lna3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Distancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distancia Actual: "
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lna10"
+        app:layout_constraintEnd_toStartOf="@+id/lna7"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="@+id/lna1"
+        app:layout_constraintTop_toTopOf="@+id/lna13"
+        app:layout_constraintVertical_bias="0.264" />
+
+    <TextView
+        android:id="@+id/Valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Valor"
+        android:textColorHint="#7FA4AF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/lna10"
+        app:layout_constraintEnd_toStartOf="@+id/lna2"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toEndOf="@+id/Distancia"
+        app:layout_constraintTop_toTopOf="@+id/lna13"
+        app:layout_constraintVertical_bias="0.27" />
+
+    <TextView
+        android:id="@+id/Resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Promedio"
+        android:textColorHint="#7FA4AF"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lna6"
+        app:layout_constraintEnd_toStartOf="@+id/lna2"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/lna1"
+        app:layout_constraintTop_toTopOf="@+id/lna10"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <TextView
+        android:id="@+id/txtValorPormedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ValorPromedio"
+        android:textColorHint="#7FA4AF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/lna12"
+        app:layout_constraintEnd_toStartOf="@+id/lna7"
+        app:layout_constraintStart_toStartOf="@+id/lna8"
+        app:layout_constraintTop_toTopOf="@+id/lna6"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <TextView
+        android:id="@+id/txtPeligro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Hay Nadie Cerca Del Bebe"
+        android:textColorHint="#7FA4AF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lna4"
+        app:layout_constraintEnd_toStartOf="@+id/lna2"
+        app:layout_constraintStart_toStartOf="@+id/lna1"
+        app:layout_constraintTop_toTopOf="@+id/lna11" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
